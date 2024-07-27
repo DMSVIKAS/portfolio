@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - E-Portfolio Website</title>
+
+  <!-- box icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+      box-shadow: 0 0 20px rgba(0, 0, 255, 0.3); /* Blue shadow */
+      border-radius: 15px; /* Rounded corners */
+    }
+
+    .container img {
+      max-width: 45%;
+      border-radius: 10px;
+    }
+
+    .container .content {
+      max-width: 50%;
+    }
+
+    .container .content h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .container .content p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .container.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .social-icons {
+      text-align: right;
+      padding: 20px;
+    }
+
+    .social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .7s ease;
+}
+.social-icons a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+  </style>
+</head>
+
+<body>
+  <!-- header design -->
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="index.html" class="active">About</a>
+      <a href="index.html">Projects</a>
+      <a href="index.html">Skills</a>
+      <a href="internship.html">Internships</a>
+      <a href="index.html">Certifications</a>
+      <a href="index.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="about-me" id="about-me">
+    <!-- First Container -->
+    <div class="container">
+      <img src="images/gta.png" alt="Your Photo">
+      <div class="content">
+        <h2>About Me</h2>
+        <p>
+          Hello! My name is Vikas, I am an ambivert person, a normal Asian dude who knows a little math and is very much indulged in unsolved mysteries. I am eagerly waiting to discover many space facts.
+        </p>
+      </div>
+    </div>
+    <!-- Second Container -->
+    <div class="container reverse">
+      <img src="images/gta1.png" alt="Your Photo">
+      <div class="content">
+        <h2>My Natural Experience</h2>
+        <p>
+          I am a person who likes both classroom settings and places outside the classroom. People call me pure and smart, but to be honest, I am just innocent and make decisions quickly. I have a big problem called goodness, where I always fall for saving others.
+        </p>
+      </div>
+    </div>
+    <!-- Third Container -->
+    <div class="container">
+      <img src="images/gta4.png" alt="Your Photo">
+      <div class="content">
+        <h2>My Habits</h2>
+        <p>
+          One of my defining traits is my strong inclination to help others, which I refer to as my "problem called goodness." This has made me an avid animal lover and a very particular photographer, specializing in capturing animals.
+        </p>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/dmsvikas?igsh=cXNoMjl2MW56bXlj" target="_blank"><i class='bx bxl-instagram'></i></a>
+      <a href="https://www.facebook.com/dms.vikas/?_rdr" target="_blank"><i class='bx bxl-facebook'></i></a>
+    </div>
+  </section>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

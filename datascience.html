@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Portfolio Website</title>
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="index.html">About</a>
+        <a href="index.html">Projects</a>
+        <a href="index.html">Skills</a>
+        <a href="internship.html">Internships</a>
+        <a href="#portfolio3">Certifications</a>
+        <a href="index.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Data Science <span>Projects</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/ds1.png" alt="">
+          <div class="portfolio-layer">
+            <h4>Wheat Plant Disease Detection</h4>
+            <p>Detection of diseases in wheat plants using Dense net model.</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/ds2.png" alt="">
+          <div class="portfolio-layer">
+            <h4>Automatic Building Detection and Recognition of Rooftops Using CNN</h4>
+            <p>The rapid growth of urban areas has increased the demand for efficient and accurate building detection and rooftop recognition. Traditional methods are time-consuming and often lack precision. This paper presents a novel approach using Convolutional Neural Networks (CNN) to automatically detect buildings and recognize rooftops in satellite images.</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="paper" id="paper">
+      <h2 class="heading">Research <span>Paper</span></h2>
+      <div class="paper-container">
+        <img src="images/paper.png" alt="">
+        <div class="text-box">
+          <h3>Automatic building detection and recognition of rooftops using convolutional neural networks</h3>
+          <p>Rooftop detection using CNNs involves training a deep learning model to identify and classify rooftops in satellite images. This can be applied to tasks like urban planning, land use classification, and disaster management.
+
+            Steps to Implement Rooftop Detection Using CNNs
+            1. Data Collection and Preparation
+            Data Collection: Obtain satellite images or aerial imagery that include rooftops. Public datasets such as the SpaceNet dataset might be useful.
+            Data Annotation: Annotate the rooftops in the images. You can use tools like Labelbox, VGG Image Annotator (VIA), or RectLabel.
+            Data Preprocessing: Resize, normalize, and augment your images to improve the robustness of the model. Typical augmentations include rotations, flips, and color adjustments.
+            2. Define the CNN Architecture
+            Define a CNN architecture suitable for object detection. A common architecture for object detection is YOLO (You Only Look Once) or Faster R-CNN. For simpler tasks, a standard CNN architecture like VGG, ResNet, or MobileNet can also be used.</p>
+            <div> </div>
+            <p>Certainly! Here’s the revised summary with the authorship and guidance details included:
+
+                ---
+                
+               Summary: Automatic Building Detection and Recognition of Rooftops Using CNN**
+                
+                Introduction
+                Urbanization has significantly accelerated the growth of cities, increasing the need for effective and precise methods for building detection and rooftop recognition. Traditional approaches often fall short in accuracy and efficiency, necessitating advancements in automated methods.
+                
+                Objective
+                The paper aims to address the challenges of building detection and rooftop recognition using Convolutional Neural Networks (CNN). By leveraging CNNs, the research proposes a novel method to enhance the accuracy and speed of detecting and recognizing rooftops in satellite imagery.
+                
+                Methodology
+                1. **Data Collection**: Satellite images containing various urban landscapes are collected to provide a diverse dataset for training and validation.
+                2. **Preprocessing**: The images are preprocessed to normalize and augment data, improving the robustness of the model.
+                3. **Model Architecture**: A CNN model is designed to extract features and patterns specific to rooftops and buildings. The architecture includes multiple convolutional layers, pooling layers, and fully connected layers.
+                4. **Training**: The model is trained on a large dataset using backpropagation and optimization techniques to minimize error rates.
+                5. **Evaluation**: Performance is evaluated using metrics such as accuracy, precision, recall, and F1 score to assess the effectiveness of the detection and recognition.
+                
+                Results
+                The proposed CNN-based approach demonstrates significant improvements over traditional methods. The model achieves high accuracy and precision in detecting buildings and recognizing rooftops, even in complex urban environments. The results indicate that CNNs can effectively handle the intricacies of satellite imagery and provide reliable outcomes.
+                
+                Conclusion
+                The study concludes that CNNs offer a powerful tool for automatic building detection and rooftop recognition. The approach not only enhances accuracy but also reduces the time required for processing large volumes of satellite images. Future work could explore further refinements to the model and its application in real-time urban planning and management systems.
+                 
+               Significance
+                This research contributes to the field of remote sensing and computer vision by introducing an advanced method for building detection. The improved performance of CNNs can lead to more efficient urban monitoring and planning, benefiting various applications in smart cities and geographic information systems (GIS).
+                
+                Authors
+                DMS Vikas, Chaitanya, and Farhan
+            
+                Guidance
+                Under the guidance of Sudheer Mangampalli
+                
+                ---
+                
+                This summary now includes the authors and their guidance, providing a comprehensive overview of the research paper.</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class ="footer-text">
+        <p>copyright &copy; 2024 by DMS VIKAS | All rights reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="datascience.html"> <i class='bx bx-up-arrow-alt'></i></a>
+      </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
