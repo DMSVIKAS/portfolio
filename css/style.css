@@ -592,5 +592,96 @@ span {
     }
     .text-box {
         width: 100%;
+    .contact {
+    background: var(--second-bg-color);
+    padding: 4rem 9%;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.contact .heading {
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact .heading span {
+    color: var(--main-color);
+}
+
+.contact form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center; /* Center align input fields */
+}
+
+.input-box input {
+    width: calc(50% - 1.5rem); /* Adjust width for spacing */
+    padding: 1rem;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--hover-text-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact {
+        padding: 4rem 3%;
+    }
+
+    .contact .heading {
+        font-size: 3.6rem;
+    }
+
+    .input-box input {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    textarea {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+        padding: 0.8rem 2rem;
+    }
+}
+
     }
 }
