@@ -19,14 +19,21 @@
     --hover-text-color: #00eeff;
 }
 
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Hide horizontal overflow */
 }
 
-body {
-    background: var(--bg-color);
-    color: var(--text-color);
+/* Ensure container widths are responsive */
+.header, .home, .about, .services, .portfolio2, .portfolio3, .contact {
+  box-sizing: border-box;
+  width: 100%; /* Ensure full-width containers */
+}
+
+/* Ensure no element exceeds viewport width */
+* {
+  box-sizing: border-box; /* Include padding and border in width */
 }
 
 section {
