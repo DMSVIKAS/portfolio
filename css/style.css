@@ -582,6 +582,7 @@ span {
           display: flex;
           flex-direction: column;
           gap: 2rem;
+          margin-bottom: 1.5rem;
       }
       @media (max-width: 768px) {
         .portfolio2 {
@@ -596,7 +597,8 @@ span {
         justify-content: center; /* Center items horizontally */
       }
       .portfolio-box2 span {
-        flex: 1 1 2%; /* Adjust the width of each image */
+        flex: 1 1 22%; /* Adjust the width of each image */
+        max-width: 25%;
     }
   
       .portfolio-box2 img {
